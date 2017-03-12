@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>html2docx test</title>
+	<style type="text/css">
+		body {margin: 20px;}
+		#example-1,.example-2 {padding: 10px;width: 300px;background:#eee;border:1px solid #aaa;}
+		div{font-size: 18px;font-family: 'Microsoft YaHei'}div p span{color:red}
+	</style>
+</head>
+<body>
+	<h3>Chinese And EN Test （中英文测试）</h3>
+	<div id="example-1">
+		<p>this is a test data !</p>
+		<p>中文测试。哈喽，html2docx.js!</p>
+	</div>
+	<button id="example-btn-1">Example1</button><br/>
+	
+	<h3>Customer Style Test（自定义样式测试）</h3>
+    <div class="example-2">
+		<p>Customer Style Test. 我是<span>红色</span>的。</p>
+	</div>
+	<button id="example-btn-2">Example2</button><br/>
+
+	<script src="./dist/html2docx.min.js"></script>
+	<script type="text/javascript">
+	  // Test1
+	  document.getElementById('example-btn-1').addEventListener('click', function(e){
+		  saveAsDocx({
+			  selector: '#example-1'
+		  })
+	  })
+      // Test2
+      document.getElementById('example-btn-2').addEventListener('click', function(e){
+		  saveAsDocx({
+			  selector: '.example-2',
+			  styleCss: "<style>div{font-size: 18px;font-family: 'Microsoft YaHei'}div p span{color:red}</style>"
+		  })
+	  })
+	</script>
+</body>
+</html>
