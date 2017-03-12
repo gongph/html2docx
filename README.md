@@ -7,6 +7,13 @@ Very cool jquery plugin - [html2dodcx.min.js](https://github.com/gongph/html2doc
 
 目前仅支持在 Browser globals 中使用。通过 `window.savaAsDocx(opts)` 方法导出文件。例如，像下面的代码：
 ```html
+<body>
+<div id="example-1">
+	<p>this is a test data !</p>
+	<p>中文测试。哈喽，html2docx.js!</p>
+</div>
+<button id="example-btn-1">Example1</button><br/>
+
 <script src="./dist/html2docx.min.js"></script>
 <script type="text/javascript">
 	  // Test
@@ -16,6 +23,7 @@ Very cool jquery plugin - [html2dodcx.min.js](https://github.com/gongph/html2doc
 		  })
 	  })
 	</script>
+</body>
 ```
 ## Options(参数)
 
