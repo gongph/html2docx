@@ -41,6 +41,7 @@ node_modules/
 src/
 .gitignore
 .babelrc
+index.html
 package.json
 webpack.build.config.js
 webpack.config.js
