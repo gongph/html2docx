@@ -35,3 +35,17 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+#
+node_modules/
+src/
+.gitignore
+.babelrc
+package.json
+webpack.build.config.js
+webpack.config.js
+
+# dist
+dist/index.html
+dist/bundle.js
+dist/html-docx.js
