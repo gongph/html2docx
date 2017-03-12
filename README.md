@@ -20,6 +20,7 @@ Very cool jquery plugin - [html2dodcx.min.js](https://github.com/gongph/html2doc
 ## Options(参数)
 
 `opts` 是一个 Object，下面是它所有的参数列表：
+
 | Param | type | default | comment |
 | :-----: | :-----: | :-----: | :-----: |
 | `selector` | String | `''` | 需要导出的 DOM 元素标识。如果是 Id 选择器则传入 `'#id'`；如果是 Class 选择器则传入 `.class`；如果是 Tag 则传入 `'tag'`。[Demo](https://github.com/gongph/html2docx/blob/master/test/index.html) |
