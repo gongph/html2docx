@@ -35,6 +35,23 @@ Very cool jquery plugin - [html2dodcx.min.js](https://github.com/gongph/html2doc
 | `styleCss` | String | `''` | Css样式。样式必须放在 `<style>...</style>` 标签中。|
 | `filename` | String | `Date.parse(new Date())` | 文件名 |
 | `orientation` | String | `portrait` | 另一参数值：`landscape` 横向导出 |
+| `margins` | Object | 	`null` | 设置文档页边距。更多详细配置见 [ WordprocessingML documentation](http://officeopenxml.com/WPSectionPgMar.php) |
+
+**margins** 对象属性列表：
+
+- `top`: number (default: 1440, i.e. 2.54 cm)
+- `right`: number (default: 1440)
+- `bottom`: number (default: 1440)
+- `left`: number (default: 1440)
+- `header`: number (default: 720)
+- `footer`: number (default: 720)
+- `gutter`: number (default: 0)
+
+For example:
+```js
+saveAsDocx({selector: '.example-3', margins: { top: 720 } })
+```
+
 
 ## LICENSE
 MIT License
