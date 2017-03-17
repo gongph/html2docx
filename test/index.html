@@ -23,6 +23,12 @@
 	</div>
 	<button id="example-btn-2">Example2</button><br/>
 
+	<h3>测试 margin </h3>
+    <div class="example-3">
+		<p>margin: {top: 720}</p>
+	</div>
+	<button id="example-btn-3">Example3</button><br/>
+
 	<script src="./dist/html2docx.min.js"></script>
 	<script type="text/javascript">
 	  // Test1
@@ -36,6 +42,23 @@
 		  saveAsDocx({
 			  selector: '.example-2',
 			  styleCss: "<style>div{font-size: 18px;font-family: 'Microsoft YaHei'}div p span{color:red}</style>"
+		  })
+	  })
+
+      // Test margin
+	  document.getElementById('example-btn-3').addEventListener('click', function(e){
+		  saveAsDocx({
+			  selector: '.example-3',
+			  styleCss: "<style>div{font-size: 18px;font-family: 'Microsoft YaHei'}div p span{color:red}</style>",
+			  margins: {
+			  	top: 720
+			  	// right: 120
+			  	// left: 320
+			  	// bottom: 320
+			  	// header: 200
+			  	// footer: 200,
+			  	// gutter: 700
+			  }
 		  })
 	  })
 	</script>
